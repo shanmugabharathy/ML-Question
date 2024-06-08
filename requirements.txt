@@ -1,0 +1,14 @@
+chromadb
+Chroma
+pandas 
+langchain 
+transformers
+langchain_community
+langchainhub
+sentence-transformers
+sentence_transformers
+torch 
+torchvision 
+torchaudio
+faiss-cpu
+streamlit
