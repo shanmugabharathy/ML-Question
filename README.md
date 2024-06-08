@@ -1,33 +1,48 @@
-Dataset: https://drive.google.com/file/d/1q6KVw4LD_rnXKVViVkBpdTyedHdQvtkk/view?usp=sharing
-To be used to the solve the problem described in the Problem Description.pdf file
+# Solution
+The entire data generated and processed during the submission is stored here: https://drive.google.com/drive/folders/1veQ0hCBBLCDdB56HbuonPmqrMqYCgigd?usp=sharing
 
-Instructions for Submission:
+## File Structure
+- `preprocess.ipynb`: This is the script for taking the raw `news_articles.json` data and process into a proper dataset.
+- `data_ingestion.ioynb`: This is the script to perform data ingestion on the processed data and store (split, chunk and index) into the ChromaDB.
+- `SOLUTION.ipynb`: This file has the entire code for data ingestion along with the complete Question Answering system.
+- `script.py`: It is a standalone python script that can answer a single question at a time.
+- `main.py`: The streamlit application for the Question Answering System.
+- `requirements.txt`: All the dependencies required to run the code locally.
 
-1. Open the problem description (PDF file) and try to solve any one of the problems given.
+## Steps to setup locally
+- Clone the repository
+```
+git clone git@github.com:Sakalya100/ML-Question.git
+```
 
-2. Clone the Repository: Clone the repository to your local machine using: 
-    1. git clone https://github.com/abhincho/ML-Question.git
+- Go to the directory
+```
+cd ML-Question
+```
 
-2. Create a Branch: 
-    1. Navigate into the repository directory: 
-        cd repository-name
+- Create a virtual Environment
+```
+python -m venv myenv
+```
 
-    2. Create a new branch for your solution:
-        1. git checkout -b <unique_name> (Use your name and mobile number or DOB to create a unique branch name)
+- Install the dependencies
+```
+pip install -r requirements.txt
+```
 
-4. Solve the Problem
+- Download the processed data or download the rawe data and run the preprocessing script.
+- With the processed data, exectue the `data_ingestion.ipynb`.
 
-5. Make the necessary changes to solve the problem.
-    1. Add and commit your changes:
-        1. git add .
-        2. git commit -m "Solved the problem"
-        3. Push your branch to your forked repository: git push origin <unique_name>
+- Set your Environment Variables with your own HuggingFace API Key and Chroma Path
+```
+DATA_PATH = "data"
+CHROMA_PATH = "chroma"
+HUGGINGFACEHUB_API_TOKEN = "your_api_key"
+```
 
-6. Submit: Inform us once you have pushed the solution branch.
+- Run the streamlit application
+```
+streamlit run main.py
+```
 
-7. You will need to submit the following items:
-
-    1. Ipython notebook or python script
-    2. Requirement.txt containing the python packages needed to run the code
-    3. Document explaining your thinking process and code.
-    4. Contact Me file containing your contact information which we will use to contact you.
+Head to the `http://localhost:8501` to see your app running.
