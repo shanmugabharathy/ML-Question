@@ -1,6 +1,12 @@
 # Solution
 The entire data generated and processed during the submission is stored here: https://drive.google.com/drive/folders/1veQ0hCBBLCDdB56HbuonPmqrMqYCgigd?usp=sharing
 
+## Demo
+
+
+https://github.com/Sakalya100/ML-Question/assets/70064084/7a48b6a5-bacf-4beb-850b-a36113a55f82
+
+
 ## File Structure
 - `preprocess.ipynb`: This is the script for taking the raw `news_articles.json` data and process into a proper dataset.
 - `data_ingestion.ioynb`: This is the script to perform data ingestion on the processed data and store (split, chunk and index) into the ChromaDB.
