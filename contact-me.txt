@@ -1,0 +1,17 @@
+Hi-ya!!! 👋
+
+I'm Nikita Prasad.
+
+Data Analyst | Machine Learning and Data Science Practitioner
+
+👩🏻‍💻 As an analyst I am eager to gain a deeper understanding of the data lifecycle with a range of tools and techniques,
+ distilling down data for actionable takeaways using Data Analytics, ETL, Machine Learning, NLP, Sentence Transformers,
+ Time-series Forecasting and Attention to Details to make recommendations across different business groups.
+
+In my recent experience with Collegedunia I had work on building an aggregated News App from Scratch for US market. 
+
+For the given assignment, I have written my thought process in the main `ques-ans-sys.ipynb` file.
+
+Further, you can contact me through: LinkedIn: https://www.linkedin.com/in/nikita-prasad-analyst/
+
+checkout My Work: https://nikita-prasad-analyst.my.canva.site/lets-connect
